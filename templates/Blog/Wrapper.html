@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Programmer's Blog {% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Blog/css/template.css' %}" type="text/css">
+
+</head>
+<body>
+{% include 'Blog/header.html' %}
+{% include 'Blog/right-panel.html' %}
+{% include 'Blog/footer.html' %}
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
