@@ -2,5 +2,25 @@
 
 {% block title %} Блог программиста {% endblock %}
 
+{%  include 'Blog/right-panel.html'  %}
+
 {% block content %}
+    {% if post_list %}
+        {% for pl in post_list %}
+
+            <div>
+                <div>
+                    <p>{{ pl.date|date:"d/m/Y" }}</p>
+                    <p>{{ pl.view }}</p>
+                    <p>{{ pl.likes }}</p>
+                </div>
+                <div>
+                    <h1><a href="{% url 'blog:detail' pl.uuid %}"> {{ pl.title }}</a></h1>
+                    <p>{{ pl.body|safe|linebreaks|truncatewords_html:5 }}...</p>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Статьи не найдены</p>
+    {% endif %}
 {% endblock %}

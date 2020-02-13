@@ -1,0 +1,7 @@
+{% extends 'Blog/Wrapper.html' %}
+
+{% block title %}{{ uuid.title }}{% endblock %}
+
+{% block content %}
+{{ uuid.body|safe|linebreaks }}
+{% endblock %}
