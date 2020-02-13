@@ -1,2 +1,2 @@
 # Simple-Django-Blog
-Simple blog on <i>Django</i>
+Simple blog on <i>Django</i> ☺
