@@ -1,1 +1,19 @@
-<div class="side_panel">this is panel</div>
+<div class="s_panel">
+    <div class="logo">
+        {% load static %}
+        <a href="/"><img src="{% static "Blog/images/Logo.png" %}" alt="Блог программиста" title="Блог программиста"></a>
+        <h2>БЛОГ ПРОГРАММИСТА</h2>
+    </div>
+    <div>
+        {% if tags %}
+            <ul class="menu">
+            {% for tag in tags %}
+                <li><a href="#">{{ tag.tag_name|upper }}</a></li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>Метки не найдены</p>
+        {% endif %}
+    </div>
+
+</div>

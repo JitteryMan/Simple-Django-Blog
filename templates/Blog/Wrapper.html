@@ -10,8 +10,11 @@
 <body>
 {% include 'Blog/right-panel.html' %}
 {% include 'Blog/footer.html' %}
-{% block content %}
 
-{% endblock %}
+<div class="content">
+    {% block content %}
+    {% endblock %}
+</div>
+
 </body>
 </html>
