@@ -8,7 +8,7 @@
         {% if tags %}
             <ul class="menu">
             {% for tag in tags %}
-                <li><a href="#">{{ tag.tag_name|upper }}</a></li>
+                <li><a href="{% url "blog:search" tag.tag_name|lower %}">{{ tag.tag_name|upper }}</a></li>
             {% endfor %}
             </ul>
         {% else %}

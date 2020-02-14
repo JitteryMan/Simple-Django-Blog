@@ -10,7 +10,7 @@ def init_with_tag() -> dict:
 
 def index(request):
     list_ = init_with_tag()
-    list_.update({'post_list': Post.objects.order_by('-title')})
+    list_.update({'post_list': Post.objects.order_by('-date')})
     return render(request, 'Blog/page.html', list_)
 
 
@@ -23,7 +23,11 @@ def detail(request, post_uuid):
     return render(request, 'Blog/page-detail.html', list_)
 
 
-def django(request):
-    # Translators: This message appears on the django page only
-    a = _('Django is perfect')
-    return HttpResponse(a)
+def search(request, label):
+    try:
+        list_ = init_with_tag()
+        list_.update({'search_list': Post.objects.filter(tag__tag_name__contains=label).order_by('-date')})
+    except Exception:
+        raise Http404('Статьи не найдены!')
+    return render(request, 'Blog/search-page.html', list_)
+
