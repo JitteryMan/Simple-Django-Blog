@@ -5,6 +5,13 @@ from django.db import models
 from django.utils import timezone
 
 
+def set_k(val: int) -> str:
+    if val >= 1000:
+        return "{:.1f}k".format(val / 1000)
+    else:
+        return str(val)
+
+
 class Post(models.Model):
     title = models.CharField('Названеие статьи',  max_length=220)
     body = models.TextField('Текст статьи', default='')
@@ -19,6 +26,12 @@ class Post(models.Model):
     class Meta:
         verbose_name = 'Статью'
         verbose_name_plural = 'Статьи'
+
+    def get_view(self):
+        return set_k(self.view)
+
+    def get_likes(self):
+        return set_k(self.likes)
 
 
 class Comment(models.Model):

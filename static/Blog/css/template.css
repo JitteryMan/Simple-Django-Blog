@@ -35,9 +35,9 @@ body{
 
 .s_panel .logo h2 {
     font-size: 1.6em;
-    font-family: "Open Sans Condensed",sans-serif;
-    text-shadow: 0 0 12px rgb(255, 162, 0);
-    /*margin-top: -20px;*/
+    font-family: "Russo One",sans-serif;
+    text-shadow: 0 0 13px #00a8ff;
+    color: #d1efff;
 }
 
 .s_panel .logo img {
@@ -72,4 +72,79 @@ body{
     color: #ffcc00;
     text-shadow: 0 0 3px #ddaa00;
     transition: all 0.5s ease;
+}
+
+.post{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: -10px;
+    border-left: 5px solid #ffcc00;
+    border-radius: 15px 0 0 15px;
+}
+
+.date{
+    background: #0092deb8;
+    float: right;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 1px 1px 5px #555;
+}
+
+.post_det{
+    background: #fff;
+    margin: 0px 86px 0px 0px;
+    padding: 0px 0px 5px 20px;
+    box-shadow: 2px 1px 5px #555;
+    min-height: 131px;
+    border-radius: 10px 0 0 10px;
+}
+
+.post_det h1{
+    font-family: 'Russo One', sans-serif;
+}
+
+.post_det a{
+    text-decoration: none;
+    color: #00a8ff;
+    transition: all 0.2s ease;
+}
+
+.post_det a:hover{
+    color: #ffcc00;
+    text-shadow: 0 0 3px #000;
+    transition: all 0.5s ease;
+}
+
+.date_time{
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: "Open Sans Condensed",sans-serif;
+    text-shadow: 1px 1px 3px #000;
+    color: #ffcc00;
+    padding: 5px 5px 5px 5px;
+    margin: 7px 7px 5px 5px;
+}
+
+.views{
+    background: url(../images/eye.png) #e6e6e6 no-repeat 6px;
+    color: #797979;
+    font-size: 20px;
+    padding-left: 26px;
+    text-align: center;
+    box-shadow: inset 0 1px 1px #666;
+    margin: 0 10px 0 5px;
+    border-radius: 10px 10px 0 0;
+    background-blend-mode: color-burn;
+}
+
+.likes{
+    background: url(../images/heart.png) #e6e6e6 no-repeat 5px;
+    color: #797979;
+    font-size: 20px;
+    padding-left: 26px;
+    text-align: center;
+    box-shadow: inset 0 -1px 1px #666;
+    margin: 0 10px 10px 5px;
+    border-radius: 0 0 10px 10px;
+    background-blend-mode: luminosity;
 }

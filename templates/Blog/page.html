@@ -6,15 +6,15 @@
     {% if post_list %}
         {% for pl in post_list %}
 
-            <div>
-                <div>
-                    <p>{{ pl.date|date:"d/m/Y" }}</p>
-                    <p>{{ pl.view }}</p>
-                    <p>{{ pl.likes }}</p>
+            <div class="post">
+                <div class="date">
+                    <div class="date_time">{{ pl.date|date:"d.m" }}<br>{{ pl.date|date:"Y" }}</div>
+                    <div class="views">{{ pl.get_view }}</div>
+                    <div class="likes">{{ pl.get_likes }}</div>
                 </div>
-                <div>
+                <div class="post_det">
                     <h1><a href="{% url 'blog:detail' pl.uuid %}"> {{ pl.title }}</a></h1>
-                    <p>{{ pl.body|safe|linebreaks|truncatewords_html:5 }}...</p>
+                    <p>{{ pl.body|safe|linebreaks|truncatewords_html:20 }}</p>
                 </div>
             </div>
         {% endfor %}
