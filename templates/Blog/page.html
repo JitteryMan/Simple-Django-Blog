@@ -13,6 +13,9 @@
                     <div class="likes">{{ pl.get_likes }}</div>
                 </div>
                 <div class="post_det">
+                    {% if pl.is_new %}
+                        <div class="new-post">NEW</div>
+                    {%  endif %}
                     <h1><a href="{% url 'blog:detail' pl.uuid %}"> {{ pl.title }}</a></h1>
                     <p>{{ pl.body|safe|linebreaks|truncatewords_html:20 }}</p>
                 </div>

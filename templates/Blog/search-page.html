@@ -1,24 +1,27 @@
 {% extends 'Blog/Wrapper.html' %}
 
-{% block title %}{% endblock %}
+{% block title %}Поиск: {% url 'blog:search' label %}{% endblock %}
 
 {% block content %}
     {% if search_list %}
         {% for pl in search_list %}
 
-            <div>
-                <div>
-                    <p>{{ pl.date|date:"d/m/Y" }}</p>
-                    <p>{{ pl.view }}</p>
-                    <p>{{ pl.likes }}</p>
+            <div class="post">
+                <div class="date">
+                    <div class="date_time">{{ pl.date|date:"d.m" }}<br>{{ pl.date|date:"Y" }}</div>
+                    <div class="views">{{ pl.get_view }}</div>
+                    <div class="likes">{{ pl.get_likes }}</div>
                 </div>
-                <div>
+                <div class="post_det">
+                    {% if pl.is_new %}
+                        <div class="new-post">NEW</div>
+                    {%  endif %}
                     <h1><a href="{% url 'blog:detail' pl.uuid %}"> {{ pl.title }}</a></h1>
-                    <p>{{ pl.body|safe|linebreaks|truncatewords_html:5 }}...</p>
+                    <p>{{ pl.body|safe|linebreaks|truncatewords_html:20 }}</p>
                 </div>
             </div>
         {% endfor %}
     {% else %}
-        <p>Статьи не найдены</p>
+        <div class="not-found">Статьи не найдены</div>
     {% endif %}
 {% endblock %}
