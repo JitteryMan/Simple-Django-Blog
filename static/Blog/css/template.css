@@ -1,6 +1,5 @@
 body{
-    background: #aaa;
-    background-image: url("/static/Blog/images/background.jpg");
+    background: url("../images/background.jpg") #aaa;
 }
 
 .header_panel{
@@ -19,6 +18,7 @@ body{
     color:#ff0;
     transition: all 0.3s ease;
     text-decoration: none;
+    background: url("../images/panel_bg.jpg") #666666;
 }
 
 .header_panel a:hover{
