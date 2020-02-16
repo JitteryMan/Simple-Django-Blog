@@ -10,7 +10,6 @@
                 <div class="date">
                     <div class="date_time">{{ pl.date|date:"d.m" }}<br>{{ pl.date|date:"Y" }}</div>
                     <div class="views">{{ pl.get_view }}</div>
-                    <div class="likes">{{ pl.get_likes }}</div>
                 </div>
                 <div class="post_det">
                     {% if pl.is_new %}

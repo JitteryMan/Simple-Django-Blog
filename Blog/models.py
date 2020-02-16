@@ -18,7 +18,6 @@ class Post(models.Model):
     body = models.TextField('Текст статьи', default='')
     date = models.DateTimeField('Дата и время статьи', default=timezone.now)
     view = models.PositiveIntegerField('Просмотры', default=0)
-    likes = models.PositiveIntegerField('Лайки', default=0)
     uuid = models.UUIDField('uuid', default=uuid.uuid4, editable=False, unique=True)
 
     def __str__(self):
@@ -30,9 +29,6 @@ class Post(models.Model):
 
     def get_view(self):
         return set_k(self.view)
-
-    def get_likes(self):
-        return set_k(self.likes)
 
     def is_new(self):
         return self.date >= timezone.now() - timedelta(days=7)

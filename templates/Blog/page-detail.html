@@ -2,6 +2,48 @@
 
 {% block title %}{{ uuid.title }}{% endblock %}
 
-{% block content %}
-{{ uuid.body|safe|linebreaks }}
-{% endblock %}
+    {% block content %}
+        <div class="post">
+                <div class="date">
+                        <div class="date_time">{{ uuid.date|date:"d.m" }}<br>{{ uuid.date|date:"Y" }}</div>
+                        <div class="views">{{ uuid.get_view }}</div>
+                </div>
+            <div class="post_det">
+                <h1>{{ uuid.title }}</h1>
+                <div style="text-align: justify">{{ uuid.body|safe|linebreaks }}
+                </div>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        <hr>
+        {% if comments %}
+            <h2>Комментарии:</h2>
+        <div>
+            {% for com in comments %}
+                <div class="post">
+                    <div class="date">
+                        <div class="date_time">
+                            {{ com.date|date:"d.m" }}<br>{{ com.date|date:"Y" }}
+                        </div>
+                    </div>
+                    <div class="post_det" style="min-height: 0">
+                        <h3>{{ com.author }}</h3>
+                        {{ com.body|linebreaks }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        {% else %}
+            <div class="not-found" style="color: #777777">Комментариев нет</div>
+        {% endif %}
+        <hr>
+        <h2>Оставить комментарий:</h2>
+            <form action="{% url 'blog:leave_comment' uuid.uuid %}" method="post">
+                {% csrf_token %}
+                <input name="aname" required placeholder="Имя автора" type="text">
+                <button type="submit">Оставить комментарий</button>
+                <br>
+                <textarea required placeholder="Текст сообщения..." name="atext" rows="5" cols="50" style="margin-bottom: 55px;"></textarea>
+            </form>
+    {% endblock %}
+
