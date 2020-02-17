@@ -1,9 +1,7 @@
-from enum import auto
-
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, Http404
 from django.urls import reverse
-from django.utils.translation import gettext as _
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from .models import Post, Tag
 
 
@@ -12,20 +10,26 @@ def init_with_tag() -> dict:
 
 
 def index(request):
-    print('index')
     list_ = init_with_tag()
-    list_.update({'post_list': Post.objects.order_by('-date')})
+    posts = Post.objects.order_by('-date')
+    paginator = Paginator(posts, 20)
+    page = request.GET.get('page')
+    try:
+        post_page = paginator.page(page)
+    except PageNotAnInteger:
+        post_page = paginator.page(1)
+    except EmptyPage:
+        post_page = paginator.page(paginator.num_pages)
+    list_.update({'post_list': post_page})
     return render(request, 'Blog/page.html', list_)
 
 
 def detail(request, post_uuid):
     try:
-        print('detail')
         list_ = init_with_tag()
         uuid = Post.objects.get(uuid=post_uuid)
         uuid.view += 1
         uuid.save()
-        print(uuid.view)
         list_.update({'uuid': uuid})
         list_.update({'comments': uuid.comment_set.order_by('-id')})
     except Exception:
@@ -35,9 +39,7 @@ def detail(request, post_uuid):
 
 def leave_comment(request, post_uuid):
     try:
-        print('leave_comment')
         uuid = Post.objects.get(uuid=post_uuid)
-        print(leave_comment)
     except Exception:
         raise Http404('Статья не найдена!')
     uuid.comment_set.create(author=request.POST['aname'], body=request.POST['atext'])
@@ -46,7 +48,6 @@ def leave_comment(request, post_uuid):
 
 def search(request, label):
     try:
-        print('search')
         list_ = init_with_tag()
         if request.GET.get('q', ''):
             label = request.GET.get('q', '')
