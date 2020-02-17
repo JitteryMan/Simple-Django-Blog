@@ -1,6 +1,6 @@
 # Simple-Django-Blog
 Simple blog on <i>Django</i> ☺
 
-Superuser
-Login: admin
-Pass: admin123
+Superuser<br>
+Login: admin<br>
+Pass: admin123<br>
