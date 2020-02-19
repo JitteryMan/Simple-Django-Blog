@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49e50094-33db-425a-8445-c003ebf49ddf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/Blog/images/eye.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Blog/images/heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Blog/css/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/Blog/css/template.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Blog/Wrapper.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Blog/Wrapper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Blog/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Blog/page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +22,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1XlErXrnK0t9jdsCUDyV4qpOH1A" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -54,9 +49,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="Simple_Django_Blog.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Pasha\AppData\Local\Programs\Python\Python38-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -116,30 +111,49 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581612481751</updated>
-      <workItem from="1581612497459" duration="6649000" />
+      <workItem from="1581612497459" duration="7685000" />
+      <workItem from="1581696051401" duration="199000" />
+      <workItem from="1581696270797" duration="35000" />
+      <workItem from="1581696482610" duration="738000" />
+      <workItem from="1581697456155" duration="13231000" />
+      <workItem from="1581754586168" duration="834000" />
+      <workItem from="1581772217549" duration="528000" />
+      <workItem from="1581781391681" duration="6311000" />
+      <workItem from="1581835979715" duration="13709000" />
+      <workItem from="1581960368816" duration="417000" />
+      <workItem from="1581962004460" duration="3356000" />
+      <workItem from="1582041037933" duration="166000" />
+      <workItem from="1582128088189" duration="1070000" />
     </task>
-    <task id="LOCAL-00001" summary="Add new bg">
-      <created>1581660098929</created>
+    <task id="LOCAL-00001" summary="New functional">
+      <created>1581619536023</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1581660098929</updated>
+      <updated>1581619536023</updated>
     </task>
-    <task id="LOCAL-00002" summary="Updating">
-      <created>1581672694901</created>
+    <task id="LOCAL-00002" summary="New functional">
+      <created>1581710705324</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1581672694901</updated>
+      <updated>1581710705324</updated>
     </task>
-    <task id="LOCAL-00003" summary="Updating">
-      <created>1581674478115</created>
+    <task id="LOCAL-00003" summary="Done">
+      <created>1581854211556</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1581674478115</updated>
+      <updated>1581854211556</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Done">
+      <created>1582128828111</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582128828111</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,79 +161,75 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add new bg" />
-    <MESSAGE value="Updating" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating" />
+    <MESSAGE value="New functional" />
+    <MESSAGE value="Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Inspections" timestamp="1581618520125">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1581618520125" />
-    <state x="679" y="138" key="#Simple_Django_Blog" timestamp="1581658503814">
+    <state x="414" y="175" width="1092" height="722" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581613216362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="679" y="138" key="#Simple_Django_Blog/0.0.1920.1040@0.0.1920.1040" timestamp="1581658503814" />
-    <state x="414" y="175" width="1092" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581660014188">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="175" width="1092" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581660014188" />
+    <state x="414" y="175" width="1092" height="722" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581613216362" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581617908801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581617908801" />
-    <state x="585" y="113" key="CommitChangelistDialog2" timestamp="1581674477057">
+    <state x="585" y="116" key="CommitChangelistDialog2" timestamp="1582128826920">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581674477057" />
+    <state x="585" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582128826920" />
     <state x="694" y="298" key="EnvironmentVariablesDialog" timestamp="1581613178082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="694" y="298" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581613178082" />
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1581687028360">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581960788484">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581687028360" />
-    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1581687028360">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581960788484" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581960788483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581687028360" />
-    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1581687028360">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581960788483" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581960788483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581687028360" />
-    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1581687028360">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581960788483" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581960788484">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581687028360" />
-    <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1581672742758">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581960788484" />
+    <state x="184" y="91" key="MergeDialog" timestamp="1582128891305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581672742758" />
-    <state width="1876" height="342" key="GridCell.Tab.1.center" timestamp="1581672742757">
+    <state x="184" y="91" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582128891305" />
+    <state x="672" y="236" key="MultipleFileMergeDialog" timestamp="1582128894395">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581672742757" />
-    <state width="1876" height="342" key="GridCell.Tab.1.left" timestamp="1581672742757">
+    <state x="672" y="236" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582128894395" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1581612647414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581672742757" />
-    <state width="1876" height="342" key="GridCell.Tab.1.right" timestamp="1581672742758">
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581612647414" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1582129153533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581672742758" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1581672469785">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582129153533" />
+    <state x="661" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1582041190900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581672469785" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1581674487831">
+    <state x="661" y="357" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582041190900" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581960483285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581674487831" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1581612504519">
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581960483285" />
+    <state x="653" y="312" key="git4idea.merge.GitPullDialog" timestamp="1582128438309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581612504519" />
+    <state x="653" y="312" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582128438309" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581616706402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
