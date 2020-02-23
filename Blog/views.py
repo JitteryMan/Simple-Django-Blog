@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect, Http404
 from django.urls import reverse
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-from .models import Post, Tag
+from .models import Post, Tag, Comment
 
 
 def init_with_tag() -> dict:

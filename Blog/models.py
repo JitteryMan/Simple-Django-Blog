@@ -31,6 +31,9 @@ class Post(models.Model):
     def is_new(self):
         return self.date >= timezone.now() - timedelta(days=7)
 
+    def len_comments(self):
+        return len(Comment.objects.filter(post_id__uuid=self.uuid))
+
 
 class Comment(models.Model):
     post_id = models.ForeignKey(Post, on_delete=models.CASCADE)
